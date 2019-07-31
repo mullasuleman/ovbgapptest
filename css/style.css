@@ -135,7 +135,7 @@ header {
 	height: 92vh;
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
-	/* z-index: 1; */
+	z-index: 1;
 }
 
 #infoBox {
@@ -145,7 +145,7 @@ header {
 	height: 40vh;
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
-	/* z-index: 200; */
+	z-index: 200;
 }
 
 
@@ -254,6 +254,7 @@ footer {
 	bottom: 0px;
 	height: 9vh;
 	width: 100vw;
+	z-index: 300;
 }
 
 footer .tab {
