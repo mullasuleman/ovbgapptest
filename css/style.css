@@ -92,10 +92,13 @@ header {
 /* Dropdown and SVG styles */
 
 #svgMapObj {
+	position: relative;
+	top: 0;
 	width: auto;
 	height: 100%;
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
+	z-index: 0;
 }
 
 .destination-menu {
