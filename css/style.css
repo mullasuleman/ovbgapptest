@@ -144,7 +144,6 @@ header {
 	position: relative;
 	width: 100%;
 	height: 40vh;
-	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
 }
 
