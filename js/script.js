@@ -748,8 +748,8 @@ window.onload = function () {
 		if (evCache.length == 2) {
 			// get the distance between two touches
 			console.log(e);
-			let curDiffX = Math.abs(evCache[0].touches[0].clientX - evCache[0].touches[1].clientX);
-			let curDiffY = Math.abs(evCache[0].touches[0].clientY - evCache[0].touches[1].clientY);
+			let curDiffX = Math.abs(evCache[0].clientX - evCache[1].clientX);
+			let curDiffY = Math.abs(evCache[0].clientY - evCache[2].clientY);
 
 			let curDiff = Math.hypot(curDiffX, curDiffY);
 
