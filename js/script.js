@@ -709,7 +709,7 @@ window.onload = function () {
 	/* PINCH AND ZOOM ---- iPhone/iPad */
 
 	// function to register touch when it starts
-	MAP_SVG.addEventListener('touchstart', function (e) {
+	MAP_SVG.addEventListener('gesturestart', function (e) {
 		// pushes the event in the array
 		evCache.push(e);
 		// console.log('start');
@@ -718,7 +718,7 @@ window.onload = function () {
 	});
 
 	// function to register the end when the user stops the interaction
-	MAP_SVG.addEventListener('touchend', function (e) {
+	MAP_SVG.addEventListener('gestureend', function (e) {
 		// console.log('end');
 
 		// reset the difference variable to prepare for the next pinch
@@ -731,7 +731,7 @@ window.onload = function () {
 	});
 
 	// function to register the pinch and then implement the zoom
-	MAP_SVG.addEventListener('touchmove', function (e) {
+	MAP_SVG.addEventListener('gesturechange', function (e) {
 
 		// console.log('height: ' + height);
 		// console.log('move');
