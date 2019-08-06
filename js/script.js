@@ -702,7 +702,7 @@ window.onload = function () {
 			// set prevDiff to currDiff to check the increase/decrease in pinch
 			prevDiff = curDiff;
 		}
-	});
+	}, {passive: false});
 
 	/* EXPANDING THE IMAGE GALLERY */
 
