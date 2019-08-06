@@ -659,7 +659,7 @@ window.onload = function () {
 	// function to register the pinch and then implement the zoom
 	MAP_SVG.addEventListener('touchmove', function (e) {
 
-		event.preventDefault();
+		e.preventDefault();
 		// console.log('height: ' + height);
 		// console.log('move');
 
