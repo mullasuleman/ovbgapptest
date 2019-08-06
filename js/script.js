@@ -750,6 +750,8 @@ window.onload = function () {
 			let curDiffX = Math.abs(evCache[0].touches[0].clientX - evCache[0].touches[1].clientX);
 			let curDiffY = Math.abs(evCache[0].touches[0].clientY - evCache[0].touches[1].clientY);
 
+			console.log(evCache[0]);
+
 			let curDiff = Math.hypot(curDiffX, curDiffY);
 
 			if (prevDiff > 0) {
