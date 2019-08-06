@@ -708,6 +708,7 @@ window.onload = function () {
 
 	/* PINCH AND ZOOM ---- iPhone/iPad */
 
+	/*
 	// function to register touch when it starts
 	MAP_SVG.addEventListener('gesturestart', function (e) {
 		// pushes the event in the array
@@ -779,7 +780,7 @@ window.onload = function () {
 		}
 	});
 
-
+*/
 
 	/* EXPANDING THE IMAGE GALLERY */
 
