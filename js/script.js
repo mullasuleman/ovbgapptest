@@ -671,9 +671,16 @@ window.onload = function () {
 
 		// to be executed when two touches are detected simultaneously
 		if (evCache.length == 2) {
+			console.log(e);
 			// get the distance between two touches
-			let curDiffX = Math.abs(evCache[0].touches[0].clientX - evCache[0].touches[1].clientX);
-			let curDiffY = Math.abs(evCache[0].touches[0].clientY - evCache[0].touches[1].clientY);
+			let curDiffX = 0;
+			let curDiffY = 0;
+
+			var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+			if (!(isSafari)) {
+				curDiffX = Math.abs(evCache[0].touches[0].clientX - evCache[0].touches[1].clientX);
+				curDiffY = Math.abs(evCache[0].touches[0].clientY - evCache[0].touches[1].clientY);
+			}
 
 			let curDiff = Math.hypot(curDiffX, curDiffY);
 
@@ -700,13 +707,15 @@ window.onload = function () {
 			// set prevDiff to currDiff to check the increase/decrease in pinch
 			prevDiff = curDiff;
 		}
-	}, {passive: false});
+	}, {
+		passive: false
+	});
 
 
 
 
 
-/* PINCH AND ZOOM -- FOR iDevices */
+	/* PINCH AND ZOOM -- FOR iDevices */
 
 	// function to register touch when it starts
 	MAP_SVG.addEventListener('gesturestart', function (e) {
@@ -749,7 +758,7 @@ window.onload = function () {
 			// get the distance between two touches
 			console.log(e);
 			let curDiffX = Math.abs(evCache[0].clientX - evCache[1].clientX);
-			let curDiffY = Math.abs(evCache[0].clientY - evCache[2].clientY);
+			let curDiffY = Math.abs(evCache[0].clientY - evCache[1].clientY);
 
 			let curDiff = Math.hypot(curDiffX, curDiffY);
 
@@ -776,7 +785,9 @@ window.onload = function () {
 			// set prevDiff to currDiff to check the increase/decrease in pinch
 			prevDiff = curDiff;
 		}
-	}, {passive: false});
+	}, {
+		passive: false
+	});
 
 
 
