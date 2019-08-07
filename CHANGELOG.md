@@ -1,4 +1,72 @@
-*** Updated on Tuesday, July 30, 2019 3:20 PM ***
+-----------------------------------------------------------------------------------------------------------
+
+*** Updated onThursday, August 7, 2019 2:56 AM ***
+
+HTML
+    - ADDED: the new image gallery section
+    - ADDED: the new drop down elements
+    - REMOVED: old dropdown menu
+    - REMOVED: the old image gallery components
+    - UPDATED: the <meta> tag to stop the scaling of the app
+    - UPDATED: File locations/links updated
+
+CSS
+    - cleaned up CSS after adding the new dropdown
+    - ADDED: new image gallery styles
+    - ADDED: new dropdown styles
+    - minor changes to existing styles
+    - Fixed weird map overlap on the iPhone/iPad
+
+JS
+    - ADDED: New image gallery event handlers
+    - ADDED: New dropdown menu with ability to select start and end point on the map
+    - ADDED: the pinch and zoom for iPhone/iPad (added 'gesturestart', 'gesturechange', 'gestureend' event handlers)
+    - UPDATED: the touch detection event handlers to stop them from working on iPhone/iPad
+    - UPDATED: the zoom parameters for all the paths (now zooms the map to 100% and scrolls to the starting point for any path)
+    - UPDATED: File locations/links updated (check arrays)
+
+FILES
+    - Park Images: created folder for each feature and added pictures
+    - Tab Icons: moved to a folder
+    - REMOVED: Unnecessary/old image files
+
+-----------------------------------------------------------------------------------------------------------
+
+*** Updated onThursday, August 1, 2019 11:25 PM ***
+
+
+HTML
+	-added missing alt tag = alt=”tempAlt”
+	-Fixed comment out on on clicks inside img tags, ! 	was missing
+	-
+	REMOVED:
+	-closing brackets from img tags
+	-H4 About
+	-viewBox="0 0 1920 1080 from Object
+
+JS
+	ADDED:
+	- animation duration, svg path length and repeat
+	   properties inside a 3d array, initially just
+            the svg path was id inside an array (parkFeautre[].paths[]). Now, each path can have different animation duration, length and repeat value. If needed in future we can add width-size and colour as well.
+	TempFixed:
+	  -When start and from locations are the
+	    same, icons circles of the location will animate once and clear after (i.e go back to their old state),  in case of Memory Garden there was no circle around it so the Memory Garden icon.
+
+	DRAW()
+	-added 2s delay
+	-increased repayDelay to 1.3s from 1s.
+
+ -Updated 3 (contentImg, expandedImg, thumbnail) lowers case constants to UPPERCASE (CONTENT_IMG, EXPANDED_IMG, THUMBNAIL)
+
+
+	REMOVED
+	 -Old disabled draw functions
+
+
+
+-----------------------------------------------------------------------------------------------------------
+*** Updated on Tuesday, July 31, 2019 3:20 PM ***
 
     SCRIPT.JS
         - added pinch and zoom functionality
@@ -16,9 +84,10 @@
         -Added function REMOVE_CURRENT_ANIMATION(); inside TABS[i] on click to remove the current/active path animation.
         -Created 3 new variables for SVG PATHS
         -Accessing to SVG path is now dynamic via paths array inside parkFeature
+        -Corrected path names to match SVG name
+        -Arranged the order of the path to match LOCATIONS.
         -Removed two old constants for the paths.
         -Duration and Length is hardcoded for now, on the next stage it will be pull from 3d array inside parkFeature>paths
-        -Updated 3 (contentImg, expandedImg, thumbnail) lowers case constants to UPPERCASE (CONTENTIMG, EXPANDEDIMG, THUMBNAIL)
     park_map.svg
         -Updated to latest svg
 
