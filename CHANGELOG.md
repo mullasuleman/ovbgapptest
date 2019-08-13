@@ -1,3 +1,36 @@
+*** Updated on Monday, August 12, 2019 9:30 PM ***
+Branch - onTabAnimation
+JS
+    - Added: Constant MAP_ICONS to access all the icons inside the map SVG. (its an array similar to TABS and follows the same order as the tabs, menus)
+    - Added: Event handler to handle the click on the icons
+    - UPDATED: Moved the code to draw the animation for the icon from the tab click handler to the openInfoPanel function as the icons are needed to be animated whenever the panel opens wether through a link, tab click or icon click.
+
+-----------------------------------------------------------------------------------------------------------
+
+*** Updated on Monday, August 12, 2019 7:55 PM ***
+Branch - onTabAnimation
+JS
+    -Removed REMOVE_CURRENT_ANIMATION(); from the function that closes the tab, so the icon animation does not stop after the tab is closed.
+
+
+-----------------------------------------------------------------------------------------------------------
+
+*** Updated on Monday, August 12, 2019 7:00 PM ***
+
+Branch - Animation Duration
+SVG
+	-updated SVG to latest
+JS
+	-Changed Duration to 3 sec from 7 for Bike To Bridge and Bridge to Bike Paths
+
+Branch - onTabAnimation
+JS
+    -Enabled repeat for icons animations (when from and to locations are same the icon for them animates).
+	-Animated park feature icons when the tab is click (When bike tab is open, the bike icons animates).
+    -Animation stops when the tab is closed.
+    -Duration is set to 5 sec for icon animations, expect for Memory Garden.
+    -Some icon name (pins) were changed in the latest svg, updated the name in JS.
+
 -----------------------------------------------------------------------------------------------------------
 
 *** Updated onThursday, August 9, 2019 2:16 AM ***
@@ -13,7 +46,7 @@ FILES
 
 -----------------------------------------------------------------------------------------------------------
 
-*** Updated onThursday, August 7, 2019 2:56 AM ***
+*** Updated on Thursday, August 7, 2019 2:56 AM ***
 
 HTML
     - ADDED: the new image gallery section
