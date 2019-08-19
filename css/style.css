@@ -594,7 +594,6 @@ footer img {
 	right: 0;
 }
 
-
 /* portrait tablets and large phones */
 @media only screen and (min-width: 600px) {
 	section {
@@ -638,7 +637,6 @@ footer img {
 		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 		object-fit: cover;
 	}
-
 }
 
 /* STYLES FOR LARGE DISPLAYS - landscape tablets, destop*/
@@ -849,17 +847,4 @@ footer img {
 		margin: 0 auto;
 		width: 100%;
 	}
-
-	#welcomeBg {
-        width: 100%;
-	}
-	
-    #splashLogo{
-        width: 30%;
-	}
-	
-    #mapBox{
-        width: 100%;
-        height: auto
-    }
 }
